@@ -1,4 +1,4 @@
-		class Node {
+	class Node {
 
 	constructor(data, priority) {
 		this.data = data;
@@ -14,8 +14,6 @@
 			this.left = node, node.parent = this;  
 		}else if(this.left && !this.right){ 
 			this.right = node, node.parent = this;	
-		}else if(this.left && this.right){
-				return 
 		}
 	}
 
@@ -86,9 +84,6 @@
 		this.parent.left = tempL;
 		this.parent.right = tempR;
 		this.parent = tempTParent;	
-
-
-		
 			}
 	}
 		module.exports = Node;
